@@ -1,0 +1,19 @@
+{
+    "CONTRACT_ADDRESS": "0xcd9749cf669464c2a5a689e3c872cdac2421b1a8",
+    "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xcd9749cf669464c2a5a689e3c872cdac2421b1a8",
+    "NETWORK": {
+      "NAME": "Ethereum",
+      "SYMBOL": "ETH",
+      "ID": 1
+    },
+    "NFT_NAME": "Cartoon Cat Frens",
+    "SYMBOL": "CCF",
+    "MAX_SUPPLY": 999,
+    "WEI_COST": 3000000000000000000,
+    "DISPLAY_COST": 0.003,
+    "GAS_LIMIT": 285000,
+    "MARKETPLACE": "Opeansea",
+    "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/ccftest3-1",
+    "SHOW_BACKGROUND": true
+  }
+  
