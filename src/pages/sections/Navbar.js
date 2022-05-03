@@ -77,9 +77,9 @@ export const Navbar = () => {
         </StyledUl>
 
         <gs.SocialMedias>
-          <gs.SocialMediaLink target="_blank" href="https://twitter.com/cartooncatfrens"><gs.SocialMedia fill={show ? "#1c1c1c" : "white"} size={"30px"} as={FaTwitter}/></gs.SocialMediaLink>
-          <gs.SocialMediaLink target="_blank" href="https://discord.gg/pHEyD3KJ"><gs.SocialMedia fill={show ? "#1c1c1c" : "white"} size={"30px"} as={FaDiscord}/></gs.SocialMediaLink>
-          <gs.SocialMediaLink target="_blank" href="https://opensea.io/collection/cartoon-cat-frens"><gs.SocialMedia src={OpenseaLogo} alt="Opensea" style={{filter: `brightness(${show ? "10%" : "100%"})`}} size ={"30px"} as={"img"}/></gs.SocialMediaLink>
+          <gs.SocialMediaLink target="_blank" href="https://twitter.com/cartooncatfrens"><gs.SocialMedia show={show} fill="white" size={"30px"} as={FaTwitter} /></gs.SocialMediaLink>
+          <gs.SocialMediaLink target="_blank" href="https://discord.gg/pHEyD3KJ"><gs.SocialMedia show={show} fill="white" size={"30px"} as={FaDiscord} /></gs.SocialMediaLink>
+          <gs.SocialMediaLink target="_blank" href="https://opensea.io/collection/cartoon-cat-frens"><gs.SocialMedia src={OpenseaLogo} alt="Opensea" size={"30px"} show={show} as={"img"}/></gs.SocialMediaLink>
         </gs.SocialMedias>
       </StyledNavMenu>
     </StyledNavbar>

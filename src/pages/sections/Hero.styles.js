@@ -20,7 +20,6 @@ export const ButtonsWrapper = styled.div`
 `;
 
 export const StyledName = styled.p`
-  flex: 1;
   width: 100%;
   font-family: "LucyTheCat";
   font-size: 5rem;
@@ -33,13 +32,24 @@ export const StyledName = styled.p`
 `;
 
 export const StyledIntroduction = styled.p`
-  flex: 1;
   width: 100%;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #ffffff;
   text-align: center;
   margin: 25px 0px;
+  @media (min-width: 768px) {
+    text-align: left;
+    margin: 0xp;
+  }
+`;
+
+export const StyledDate = styled.p`
+  width: 100%;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: var(--blue);
+  text-align: center;
   @media (min-width: 768px) {
     text-align: left;
     margin: 0xp;

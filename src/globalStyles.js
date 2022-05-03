@@ -118,6 +118,9 @@ export const SocialMedia = styled.div`
 
   transition: all 0.3s ease 0s;
 
+  ${({show}) => show && `filter: brightness(10%);`}
+
+
   &:hover {
     filter: brightness(70%);
   }

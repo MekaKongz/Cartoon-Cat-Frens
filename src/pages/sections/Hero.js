@@ -4,6 +4,7 @@ import {
   ButtonsWrapper,
   StyledName,
   StyledIntroduction,
+  StyledDate,
   StyledButton,
   Breaker,
   NFTContainer,
@@ -16,6 +17,9 @@ import OpenseaLogo from "../../assets/opensea-logo.svg";
 import NFT from "../../assets/nft.png";
 
 export const Hero = () => {
+  const currentDateTime = new Date();
+  const targetDateTime = new Date('Fri, 13 May 2022 07:00:00 GMT');
+
   return (
     <gs.Container
       jc="center"
@@ -37,10 +41,18 @@ export const Hero = () => {
           </StyledIntroduction>
 
           <gs.Container>
+            <StyledDate>Meowlist Mint: May 13</StyledDate>
+            <StyledDate>Public Mint: May 14</StyledDate>
+            <StyledDate></StyledDate>
+          </gs.Container>
+
+          <gs.Container>
             <ButtonsWrapper fw="wrap">
-              <gs.SocialMediaLink href="/minting-dapp/">
-                <StyledButton>MINT</StyledButton>
-              </gs.SocialMediaLink>
+              {Date.parse(currentDateTime) > Date.parse(targetDateTime) && (
+                <gs.SocialMediaLink href="/minting-dapp/">
+                  <StyledButton>MINT</StyledButton>
+                </gs.SocialMediaLink>
+              )}
               <Breaker />
               <gs.SocialMediaLink
                 target="_blank"
