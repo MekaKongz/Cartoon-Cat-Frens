@@ -43,7 +43,7 @@ const StyledAccordionTitle = styled.div`
 `;
 
 const AccordianTransition = styled.div`
-  max-height:  ${({ show }) => show ? "100px" : "0px"};
+  max-height:  ${({ show }) => show ? "500px" : "0px"};
   overflow: hidden;
   transition: all .5s ease-out;
 `;

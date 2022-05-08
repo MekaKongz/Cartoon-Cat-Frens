@@ -12,7 +12,7 @@ export const StyledNavbar = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  z-index: 1;
+  z-index: 999;
 
   transition: all 0.2s ease 0s;
 `;

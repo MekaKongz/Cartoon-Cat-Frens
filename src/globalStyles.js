@@ -77,7 +77,7 @@ export const CardWrapper = styled.div`
 `;
 
 export const TextHeader = styled.p`
-  width: 100%;
+  width: 90%;
   color: var(--${({ color }) => color ? color : "white"});
   text-align: center;
   font-size: 2.5rem;
